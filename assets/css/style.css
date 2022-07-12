@@ -4,13 +4,18 @@
 }
 
 .first {
-  height: 100vh;
-  background-color: aqua;
+  height: 85vh;
 }
 
 .header-main {
   display: flex;
   justify-content: end;
+}
+
+@media screen and (max-width: 767px) {
+  .header-main {
+    display: none;
+  }
 }
 
 .header-box {
@@ -69,18 +74,45 @@
   left: 50px;
 }
 
-.main-box1, .main-box2, .main-box3 {
-  position: absolute;
+@media screen and (max-width: 767px) {
+  .main-conteiner {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-box1 {
+    position: relative;
+  }
 }
 
 .main-box2 {
+  position: absolute;
   top: -120px;
   left: -60px;
 }
 
+@media screen and (max-width: 767px) {
+  .main-box2 {
+    position: static;
+    display: flex;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+}
+
 .main-box3 {
+  position: absolute;
   left: 590px;
   top: 240px;
+}
+
+@media screen and (max-width: 767px) {
+  .main-box3 {
+    left: 7%;
+    top: 20%;
+    width: 60%;
+  }
 }
 
 .main-font {
