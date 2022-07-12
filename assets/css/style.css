@@ -81,4 +81,14 @@
 .main-font {
   top: 1300px;
 }
+
+.contents {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  color: black;
+  background-color: black;
+}
 /*# sourceMappingURL=style.css.map */
