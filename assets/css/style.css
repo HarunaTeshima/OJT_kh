@@ -87,6 +87,10 @@
   justify-content: center;
 }
 
+.contents-2 {
+  display: flex;
+}
+
 .footer {
   color: black;
   background-color: black;
