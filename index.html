@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="first">
     <header class="header-main">
         <menu class="header-box">menu1</menu>
         <menu class="header-box">menu2</menu>
@@ -23,11 +24,18 @@
         </label>
 
     <main class="main-conteiner">
-        <img class="main-box1" src="./folder/visual_1_pc.png" alt="">
+        <picture class="main-box1">
+            <source media="(max-width:  767px)" srcset="./folder/visual_1_sp.png">
+            <img src="./folder/visual_1_pc.png" alt="美浜夜景">
+        </picture>
         <img class="main-box2" src="./folder/logo.png" alt="">
-        <img class="main-box3" src="./folder/visual_text_pc.png" alt="">
+        <picture class="main-box3" >
+            <source media="(max-width:  767px)" srcset="./folder/visual_text_sp.png">
+            <img src="./folder/visual_text_pc.png" alt="美浜文字"> 
+        </picture>
         <p class="main-font">参加し続ける「街」アメリカンビレッジマガジン</p>
     </main>
+</div>
 
     <h1>Latest Articles</h1>
      <section class="contents">
