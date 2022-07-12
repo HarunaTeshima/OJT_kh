@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+.first {
+  height: 100vh;
+  background-color: aqua;
+}
+
 .header-main {
   display: flex;
   justify-content: end;
