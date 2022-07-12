@@ -151,7 +151,7 @@ h1 {
   box-shadow: 1px 1px 12px black;
 }
 
-.contents a:before {
+.contents .rm:before {
   content: "";
   position: absolute;
   left: 0;
@@ -164,7 +164,7 @@ h1 {
   transition: 0.4s;
 }
 
-.contents a:hover:before {
+.contents .rm:hover:before {
   transform: scale(1);
 }
 
