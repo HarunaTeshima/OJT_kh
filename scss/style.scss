@@ -168,7 +168,22 @@
     font-size: 30px;
   }
 
-  .contents {
+
+h1 {
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 auto;
+  padding-bottom: 50px;
+  min-height: 100px;
+
+
+  &-2 {
     display: flex;
     justify-content: space-around;
     padding: 0 auto;
@@ -262,16 +277,18 @@
 
 
 
-
-
-    .footer {
-      background-color: black;
-      height: 90px;
-      color: white;
-      text-align: center;
-      font-size: 7px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
+  &-bx2:hover {
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 30);
   }
+
+
+footer {
+  background-color: black;
+  height: 90px;
+  color: white;
+  text-align: center;
+  font-size: 7px;
+  margin: 0 auto;
+  padding: 60px 0;
+
 }
