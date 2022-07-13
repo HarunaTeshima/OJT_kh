@@ -29,16 +29,19 @@
 }
 
 @media screen and (max-width: 767px) {
-  .header-bun {
-    width: 30px;
-    height: 30px;
+  .bun {
+    width: 40px;
+    height: 40px;
     display: block;
     cursor: pointer;
+    position: absolute;
+    right: 19%;
+    top: 13%;
     /* background-color: aqua; */
   }
-  .header .bun .pate,
-  .header .bun .pate::before,
-  .header .bun .pate::after {
+  .bun .pate,
+  .bun .pate::before,
+  .bun .pate::after {
     width: 100%;
     height: 5px;
     display: block;
@@ -46,31 +49,31 @@
     border-radius: 2px;
     transition: all 1s ease;
   }
-  .header .bun .pate {
+  .bun .pate {
     position: relative;
     top: calc(50% - 2px);
   }
-  .header .bun .pate::before,
-  .header .bun .pate::after {
+  .bun .pate::before,
+  .bun .pate::after {
     position: absolute;
     content: '';
   }
-  .header .bun .pate::before {
+  .bun .pate::before {
     top: -9px;
   }
-  .header .bun .pate::after {
+  .bun .pate::after {
     top: 9px;
   }
-  .header #hamburger:checked + .bun .pate {
+  #hamburger:checked + .bun .pate {
     background-color: transparent;
   }
-  .header #hamburger:checked + .bun .pate::before {
+  #hamburger:checked + .bun .pate::before {
     transform: rotate(45deg) translate(5px, 5px);
   }
-  .header #hamburger:checked + .bun .pate::after {
+  #hamburger:checked + .bun .pate::after {
     transform: rotate(-45deg) translate(7px, -8px);
   }
-  .header #hamburger:checked ~ .header-right {
+  #hamburger:checked ~ .header-right {
     right: 0;
   }
 }
@@ -117,7 +120,7 @@
 @media screen and (max-width: 767px) {
   .main-box3 {
     left: 4%;
-    top: 23%;
+    top: 29%;
     width: 60%;
   }
 }
