@@ -129,13 +129,13 @@
   }
 }
 
-.contents h1 {
+h1 {
   text-align: center;
   padding: 50px;
   font-size: 30px;
 }
 
-.contents .contents {
+.contents {
   display: flex;
   justify-content: space-around;
   padding: 0 auto;
@@ -143,37 +143,14 @@
   min-height: 100px;
 }
 
-.contents .contents-2 {
+.contents-2 {
   display: flex;
   justify-content: space-around;
   min-height: 100px;
 }
 
-.contents .contents-bx1 {
-  background-color: white;
-  width: 317px;
-  margin: 5px;
-  height: 400px;
-  display: inline-block;
-  transition: all .4s ease-in-out;
-  min-height: 100px;
-}
-
-.contents .contents-bx1 a {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.contents .contents-bx1:hover {
-  box-shadow: 1px 1px 12px black;
-}
-
-.contents .contents .p {
-  margin-bottom: 40px;
-}
-
-.contents .contents-bx2 {
+.contents-bx1 {
+  position: relative;
   background-color: white;
   width: 317px;
   margin: 5px;
@@ -182,35 +159,47 @@
   transition: all .4s ease-in-out;
 }
 
-.contents .contents-bx2 a {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  min-height: 100px;
-}
-
-.contents .contents-bx2:hover {
-  box-shadow: 1px 1px 12px black;
-}
-
-.contents .contents .rm:before {
-  content: "";
+.contents-bx1 a {
+  right: 0;
+  bottom: 0;
   position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 100%;
-  height: 3px;
-  background: #555;
-  transform: scale(0, 1);
-  transform-origin: left;
-  transition: 0.4s;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100px;
+  text-decoration: none;
 }
 
-.contents .contents .rm:hover:before {
-  transform: scale(1);
+.contents-bx1:hover {
+  box-shadow: 1px 1px 12px black;
 }
 
-.contents .contents .footer {
+.contents-bx2 {
+  position: relative;
+  background-color: white;
+  width: 317px;
+  margin: 5px;
+  height: 400px;
+  display: inline-block;
+  transition: all .4s ease-in-out;
+}
+
+.contents-bx2 a {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100px;
+  text-decoration: none;
+}
+
+.contents-bx2:hover {
+  box-shadow: 1px 1px 12px black;
+}
+
+footer {
   background-color: black;
   height: 90px;
   color: white;
