@@ -141,28 +141,84 @@ h1 {
 .contents {
   display: flex;
   justify-content: space-around;
-  padding: 0 auto;
-  padding-bottom: 50px;
   min-height: 100px;
+}
+
+.contents a {
+  right: 0;
+  bottom: 20px;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  min-height: 100px;
+}
+
+.contents a::after {
+  position: absolute;
+  right: 0;
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: #000000;
+  bottom: -1px;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.3s;
+}
+
+.contents a:hover::after {
+  transform: scale(1, 1);
 }
 
 @media screen and (max-width: 767px) {
   .contents {
-    height: 300px;
     display: block;
+    position: static;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
 .contents-2 {
   display: flex;
   justify-content: space-around;
+  padding: 0 auto;
+  padding-bottom: 50px;
   min-height: 100px;
+}
+
+.contents-2 a {
+  right: 0;
+  bottom: 20px;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  min-height: 100px;
+}
+
+.contents-2 a::after {
+  position: absolute;
+  right: 0;
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: #000000;
+  bottom: -1px;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.3s;
+}
+
+.contents-2 a:hover::after {
+  transform: scale(1, 1);
 }
 
 @media screen and (max-width: 767px) {
   .contents-2 {
-    height: 300px;
     display: block;
+    position: static;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -175,15 +231,10 @@ h1 {
   transition: all .4s ease-in-out;
 }
 
-.contents-bx1 a {
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  min-height: 100px;
-  text-decoration: none;
+@media screen and (max-width: 767px) {
+  .contents-bx1 {
+    margin: 0 auto;
+  }
 }
 
 .contents-bx1:hover {
@@ -199,15 +250,10 @@ h1 {
   transition: all .4s ease-in-out;
 }
 
-.contents-bx2 a {
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  min-height: 100px;
-  text-decoration: none;
+@media screen and (max-width: 767px) {
+  .contents-bx2 {
+    margin: 0 auto;
+  }
 }
 
 .contents-bx2:hover {
