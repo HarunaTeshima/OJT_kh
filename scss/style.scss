@@ -20,6 +20,9 @@
 .first {
   height: 85vh;
   // background-color: aqua;
+  @include sp-screen {
+    height: 53vh;
+  }
 }
 
 // --------- headr -------------
@@ -123,6 +126,7 @@
       position: static;
       display: flex;
       width: 30%;
+      margin-top: 20px;
       margin-bottom: 20px;
     }
   }
@@ -133,14 +137,17 @@
     top: 240px;
 
     @include sp-screen {
-      left: 7%;
-      top: 20%;
+      left: 4%;
+      top: 23%;
       width: 60%;
     }
   }
 
   &-font {
-    top: 1300px;
+    @include sp-screen {
+    text-align: center;
+    font-size: 15px;
+    }
   }
 }
 
@@ -256,3 +263,4 @@ h1{
   margin: 0 auto;
   padding: 60px 0;
 }
+}}
