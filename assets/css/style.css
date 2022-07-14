@@ -175,7 +175,7 @@ h1 {
     display: block;
     position: static;
     margin: 0 auto;
-    width: 100%;
+    text-align: center;
   }
 }
 
@@ -219,6 +219,7 @@ h1 {
     position: static;
     margin: 0 auto;
     width: 100%;
+    text-align: center;
   }
 }
 
