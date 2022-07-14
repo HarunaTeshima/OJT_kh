@@ -17,28 +17,28 @@
 //  }
 
 
-.first {
-  height: 85vh;
+// .first {
+//   height: 85vh;
 
-  // background-color: aqua;
-  @include sp-screen {
-    height: 53vh;
-  }
-}
+//   // background-color: aqua;
+//   @include sp-screen {
+//     height: 53vh;
+//   }
+// }
 
 // --------- headr -------------
 .header {
   &-main {
     // background-color: aqua;
     display: flex;
-    justify-content: end;
+    margin: 100px 0px;
 
     @include sp-screen {
-      display: none;
+      // display: none;
       position: fixed;
       top: 85px;
-      right: -100px;
-      color: black;
+      right: -200px;
+      color: white;
       transition-duration: 3s;
 
     }
