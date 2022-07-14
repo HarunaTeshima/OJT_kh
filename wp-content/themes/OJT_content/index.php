@@ -1,37 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <!-- <div class="first"> -->
-    <header>
-        <div class="header-main">
-            <a class="header-box" href="">menu1</a>
-            <a class="header-box" href="">menu2</a>
-            <a class="header-box" href="">menu3</a>
-            <a class="header-box" href="">menu4</a>
-        </div>
-
-        <!-- 　ハンバーガーメニュー　 -->
-        <input type="checkbox" id="hamburger">
-        <label for="hamburger" class="bun">
-            <span class="pate"></span>
-        </label>
-    </header>
-
+<?php get_header(); ?>
     <main class="main-conteiner">
         <img class="main-box2" src="./folder/logo.png" alt="">
         <picture class="main-box1">
-            <source media="(max-width:  767px)" srcset="./folder/visual_1_sp.png">
-            <img src="./folder/visual_1_pc.png" alt="美浜夜景">
+            <source media="(max-width:  767px)" srcset=<?php the_post_thumbnail(); ?>>
+            <img src=<?php the_post_thumbnail(); ?>>
         </picture>
         <picture class="main-box3">
             <source media="(max-width:  767px)" srcset="./folder/visual_text_sp.png">
@@ -107,7 +79,4 @@
             </div>
         </div>
     </section>
-    <footer>Copyright &copy; Shinohara. ALL RIGHTS RESERVED.</footer>
-</body>
-
-</html>
+    <?php get_footer(); ?>
