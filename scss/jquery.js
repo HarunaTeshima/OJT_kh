@@ -1,3 +1,3 @@
 $(function(){
-  $("main-box1").fadeIn(3000);
+  $("img").hide().fadeIn("slow");
 })

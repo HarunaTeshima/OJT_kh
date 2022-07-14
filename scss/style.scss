@@ -37,7 +37,7 @@
       display: none;
       position: fixed;
       top: 85px;
-      right: -200px;
+      right: -100px;
       color: black;
       transition-duration: 3s;
 
@@ -158,6 +158,12 @@
       text-align: center;
       font-size: 15px;
     }
+  }
+}
+.sp-br{
+  display:block;
+  @include sp-screen {
+    display:block;
   }
 }
 
