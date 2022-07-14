@@ -3,28 +3,25 @@
   margin: 0 auto;
 }
 
-.first {
-  height: 85vh;
-}
-
-@media screen and (max-width: 767px) {
-  .first {
-    height: 53vh;
-  }
-}
-
 .header-main {
   display: flex;
-  justify-content: end;
+  margin: 100px 0px;
 }
 
 @media screen and (max-width: 767px) {
   .header-main {
+<<<<<<< HEAD
     display: none;
     position: fixed;
     top: 85px;
     right: -100px;
     color: black;
+=======
+    position: fixed;
+    top: 85px;
+    right: -200px;
+    color: white;
+>>>>>>> 9f788fa68df71f3f6f942b398f3445a78187dad1
     transition-duration: 3s;
   }
 }
