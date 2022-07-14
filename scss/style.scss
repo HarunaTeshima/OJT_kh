@@ -17,43 +17,29 @@
 //  }
 
 
-// .first {
-//   height: 85vh;
-
-//   // background-color: aqua;
-//   @include sp-screen {
-//     height: 53vh;
-//   }
-// }
 
 // --------- headr -------------
 .header {
   &-main {
     // background-color: aqua;
     display: flex;
-    margin: 100px 0px;
+    justify-content: end;
 
     @include sp-screen {
-<<<<<<< HEAD
+
       display: none;
 
-=======
-      // display: none;
->>>>>>> 9f788fa68df71f3f6f942b398f3445a78187dad1
+
       position: fixed;
       top: 85px;
       right: -200px;
       color: white;
       transition-duration: 3s;
-<<<<<<< HEAD
-
-=======
->>>>>>> 9f788fa68df71f3f6f942b398f3445a78187dad1
     }
   }
 
   &-box {
-    margin: 50px 20px;
+    margin: 45px 20px;
 
   }
 
