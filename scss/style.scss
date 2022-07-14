@@ -35,15 +35,13 @@
 
     @include sp-screen {
       display: none;
-<<<<<<< HEAD
-=======
+
       position: fixed;
       top: 85px;
       right: -100px;
       color: black;
       transition-duration: 3s;
 
->>>>>>> c842d2fe60697e4bc5ce55137ccdcde50cfebb5b
     }
   }
 
@@ -211,16 +209,11 @@ h1 {
     }  
 
     .blog{
-      left: 0px;
-      top: 0 auto;
-      position: absolute;
-      display: flex;
-      align-items: flex-end;
-      min-height: 100px;
-
       @include sp-screen {
-        text-align: left;
-        display: inline-block;
+        left: 0px;
+        position: absolute;
+        align-items: flex-end;
+        min-height: 100px;
       }
     }
 
@@ -242,16 +235,11 @@ h1 {
     min-height: 100px;
 
     .blog{
-      left: 0px;
-      top: 0 auto;
-      position: absolute;
-      display: flex;
-      align-items: flex-end;
-      min-height: 100px;
-
       @include sp-screen {
-        text-align: left;
-        display: inline-block;
+        left: 0px;
+        position: absolute;
+        align-items: flex-end;
+        min-height: 100px;
       }
     }
 
@@ -323,11 +311,6 @@ h1 {
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 30);
   }
 }
-
-
-
-
-
 
 footer {
   background-color: black;
