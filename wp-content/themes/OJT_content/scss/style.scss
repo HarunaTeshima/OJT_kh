@@ -26,10 +26,7 @@
     margin-left: 800px;
 
     @include sp-screen {
-
       display: none;
-
-
       position: fixed;
       top: 85px;
       right: -200px;
@@ -118,6 +115,10 @@
   }
 
   &-box1 {
+    width: 100%;
+   opacity: 0;
+   animation: fadein-anim 15s linear forwards;
+
     @include sp-screen {
       position: relative;
     }

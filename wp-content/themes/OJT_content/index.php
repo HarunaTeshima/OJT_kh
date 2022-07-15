@@ -1,13 +1,14 @@
 <?php get_header(); ?>
     <main class="main-conteiner">
-        <img class="main-box2" src="./folder/logo.png" alt="">
+        <img class="main-box2" src="<?php echo get_template_directory_uri(); ?>/folder/logo.png" alt="">
         <picture class="main-box1">
-            <source media="(max-width:  767px)" srcset=<?php the_post_thumbnail(); ?>>
-            <img src=<?php the_post_thumbnail(); ?>>
+        <?php //the_post_thumbnail(); ?>
+             <source media="(max-width:  767px)" srcset="<?php echo get_template_directory_uri(); ?>/folder/visual_1_sp.png">
+            <img src="<?php echo get_template_directory_uri(); ?>/folder/visual_1_pc.png"> 
         </picture>
         <picture class="main-box3">
-            <source media="(max-width:  767px)" srcset="./folder/visual_text_sp.png">
-            <img src="./folder/visual_text_pc.png" alt="美浜文字">
+            <source media="(max-width:  767px)" srcset="<?php echo get_template_directory_uri(); ?>/folder/visual_text_sp.png">
+            <img src="<?php echo get_template_directory_uri(); ?>/folder/visual_text_pc.png" alt="美浜文字">
         </picture>
     </main>
     <!-- </div> -->
@@ -17,7 +18,7 @@
     <h1>Latest Articles</h1>
     <section class="contents">
         <div class="contents-bx1">
-            <img src="./folder/post_img_1.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/folder/post_img_1.png" alt="">
             <div class="date">
                 <div class="blog">
                     <time datetime="2018-05-20">2018 / 5 / 20</time>
@@ -27,7 +28,7 @@
             </div>
         </div>
         <div class="contents-bx1">
-            <img src="./folder/post_img_2.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/folder/post_img_2.png" alt="">
             <div class="date">
                 <div class="blog">
                     <time datetime="2018-05-19">2018 / 5 / 19</time>
@@ -37,7 +38,7 @@
             </div>
         </div>
         <div class="contents-bx1">
-            <img src="./folder/post_img_3.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/folder/post_img_3.png" alt="">
             <div class="date">
                 <div class="blog">
                     <time datetime="2018-05-18">2018 / 5 / 18</time>
@@ -49,7 +50,7 @@
     </section>
     <section class="contents-2">
         <div class="contents-bx2">
-            <img src="./folder/post_img_4.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/folder/post_img_4.png" alt="">
             <div class="date">
                 <div class="blog">
                     <time datetime="2018-05-27">2018 / 5 / 27</time>
@@ -59,7 +60,7 @@
             </div>
         </div>
         <div class="contents-bx2">
-            <img src="./folder/post_img_5.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/folder/post_img_5.png" alt="">
             <div class="date">
                 <div class="blog">
                     <time datetime="2018-05-16">2018 / 5 / 16</time>
@@ -69,7 +70,7 @@
             </div>
         </div>
         <div class="contents-bx2">
-            <img src="./folder/post_img_6.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/folder/post_img_6.png" alt="">
             <div class="date">
                 <div class="blog">
                     <time datetime="2018-05-15">2018 / 5 / 15</time>

@@ -16,11 +16,11 @@
     <header>
          <div>
          <ul class="header-main">
-         <?php wp_nav_menu(); ?>
-             <!-- <li><a class="header-box" href="">menu1</a></li>
+         <?php //wp_nav_menu(); ?>
+             <li><a class="header-box" href="">menu1</a></li>
              <li><a class="header-box" href="">menu2</a></li>
              <li><a class="header-box" href="">menu3</a></li>
-             <li><a class="header-box" href="">menu4</a></li> -->
+             <li><a class="header-box" href="">menu4</a></li> 
             </ul>
         </div> 
 
