@@ -16,10 +16,10 @@
     </div>
     <h1><?php the_title(); ?></h1>
     <?php 
-    if(have_post()):
-    while(have_post()):
-    the_post();
-  ?>
+      if (have_posts()):
+        while(have_posts()):
+          the_post();
+    ?>
     <section class="contents">
         <div class="contents-bx1">
         <?php the_post_thumbnail(); ?>
@@ -32,6 +32,6 @@
                 <a href="<?php the_permalink(); ?>">READ MORE</a>
             </div>
         </div>
-    <?php endwhile; ?>
+        <?php endwhile;?>
     <?php endif; ?>
     <?php get_footer(); ?>
