@@ -167,6 +167,8 @@
 
 
 // -----------Contents------------
+
+
 h1 {
   text-align: center;
   padding: 50px;
@@ -222,55 +224,6 @@ h1 {
    
   }
 
-  &-2 {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 auto;
-    padding-bottom: 50px;
-    min-height: 100px;
-
-    .blog{
-      @include sp-screen {
-        left: 0px;
-        position: absolute;
-        align-items: flex-end;
-        min-height: 100px;
-      }
-    }
-
-    a {
-      right: 0px;
-      bottom: 20px;
-      position: absolute;
-      display: flex;
-      align-items: flex-end;
-      min-height: 100px;
-    }
-  
-    a::after {
-      position: absolute;
-      transition: 0.5s;
-      right: 0;
-      content: '';
-      width: 20px;
-      height: 2px;
-      background: #000000;
-      bottom: -1px;
-      }
-      
-      a:hover::after {
-      width: 100%;
-      }  
-
-
-    @include sp-screen {
-      display: block;
-      position: static;
-      margin: 0 auto;
-      width: 100%;
-      text-align: center;
-    }
-  }
 
   &-bx1 {
     position: relative;
@@ -289,22 +242,6 @@ h1 {
   &-bx1:hover {
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 30);
   }
-
-  &-bx2 {
-    position: relative;
-    width: 317px;
-    margin: 5px;
-    height: 400px;
-    display: inline-block;
-    transition: all .4s ease-in-out;
-
-    @include sp-screen {
-      margin: 0 auto;
-    }
-  }
-  &-bx2:hover {
-    box-shadow: 1px 1px 12px rgba(0, 0, 0, 30);
-  }
 }
 
 footer {
@@ -316,3 +253,152 @@ footer {
   margin: 0 auto;
   padding: 55px 0;
 }
+// h1 {
+//   text-align: center;
+//   padding: 50px;
+//   font-size: 30px;
+// }
+
+// .contents {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-around;
+//   min-height: 100px;
+
+//   a {
+//     right: 0px;
+//     bottom: 20px;
+//     position: absolute;
+//     display: flex;
+//     align-items: flex-end;
+//     min-height: 100px;
+//   }
+
+//   a::after {
+//     position: absolute;
+//     transition: 0.5s;
+//     right: 0;
+//     content: '';
+//     width: 20px;
+//     height: 2px;
+//     background: #000000;
+//     bottom: -1px;
+//     }
+    
+//     a:hover::after {
+//     width: 100%;
+//     }  
+
+//     .blog{
+//       @include sp-screen {
+//         left: 0px;
+//         position: absolute;
+//         align-items: flex-end;
+//         min-height: 100px;
+//       }
+//     }
+
+
+
+//   @include sp-screen {
+//     display: block;
+//     position: static;
+//     margin: 0 auto;
+//     text-align: center;
+   
+//   }
+
+//   &-2 {
+//     display: flex;
+//     justify-content: space-around;
+//     padding: 0 auto;
+//     padding-bottom: 50px;
+//     min-height: 100px;
+
+//     .blog{
+//       @include sp-screen {
+//         left: 0px;
+//         position: absolute;
+//         align-items: flex-end;
+//         min-height: 100px;
+//       }
+//     }
+
+//     a {
+//       right: 0px;
+//       bottom: 20px;
+//       position: absolute;
+//       display: flex;
+//       align-items: flex-end;
+//       min-height: 100px;
+//     }
+  
+//     a::after {
+//       position: absolute;
+//       transition: 0.5s;
+//       right: 0;
+//       content: '';
+//       width: 20px;
+//       height: 2px;
+//       background: #000000;
+//       bottom: -1px;
+//       }
+      
+//       a:hover::after {
+//       width: 100%;
+//       }  
+
+
+//     @include sp-screen {
+//       display: block;
+//       position: static;
+//       margin: 0 auto;
+//       width: 100%;
+//       text-align: center;
+//     }
+//   }
+
+//   &-bx1 {
+//     position: relative;
+//     width: 317px;
+//     margin: 5px;
+//     height: 400px;
+//     display: inline-block;
+//     transition: all .4s ease-in-out;
+
+//     @include sp-screen {
+//       margin: 0 auto;
+//     }
+
+//   }
+
+//   &-bx1:hover {
+//     box-shadow: 1px 1px 12px rgba(0, 0, 0, 30);
+//   }
+
+//   &-bx2 {
+//     position: relative;
+//     width: 317px;
+//     margin: 5px;
+//     height: 400px;
+//     display: inline-block;
+//     transition: all .4s ease-in-out;
+
+//     @include sp-screen {
+//       margin: 0 auto;
+//     }
+//   }
+//   &-bx2:hover {
+//     box-shadow: 1px 1px 12px rgba(0, 0, 0, 30);
+//   }
+// }
+
+// footer {
+//   background-color: black;
+//   height: 70px;
+//   color: white;
+//   text-align: center;
+//   font-size: 7px;
+//   margin: 0 auto;
+//   padding: 55px 0;
+// }
