@@ -116,8 +116,6 @@
 
   &-box1 {
     width: 100%;
-   opacity: 0;
-   animation: fadein-anim 15s linear forwards;
 
     @include sp-screen {
       position: relative;
@@ -176,6 +174,7 @@ h1 {
 }
 
 .contents {
+  background-color: aqua;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -198,7 +197,7 @@ h1 {
     width: 20px;
     height: 2px;
     background: #000000;
-    bottom: -1px;
+    // bottom: -1px;
     }
     
     a:hover::after {
@@ -244,7 +243,7 @@ h1 {
   }
 }
 
-footer {
+.ft {
   background-color: black;
   height: 70px;
   color: white;
