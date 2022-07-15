@@ -14,13 +14,16 @@
 <body>
     <!-- <div class="first"> -->
     <header>
-        <!-- <div class="header-main">
-            <a class="header-box" href="">menu1</a>
-            <a class="header-box" href="">menu2</a>
-            <a class="header-box" href="">menu3</a>
-            <a class="header-box" href="">menu4</a>
-        </div> -->
-        <?php wp_nav_menu(); ?>
+         <div>
+         <ul class="header-main">
+         <?php wp_nav_menu(); ?>
+             <!-- <li><a class="header-box" href="">menu1</a></li>
+             <li><a class="header-box" href="">menu2</a></li>
+             <li><a class="header-box" href="">menu3</a></li>
+             <li><a class="header-box" href="">menu4</a></li> -->
+            </ul>
+        </div> 
+
         <!-- 　ハンバーガーメニュー　 -->
         <input type="checkbox" id="hamburger">
         <label for="hamburger" class="bun">
