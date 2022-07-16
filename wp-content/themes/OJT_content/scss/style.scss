@@ -1,4 +1,5 @@
-* {
+.main-conteiner,
+.main-conteiner2 {
   max-width: 1152px;
   margin: 0 auto;
 }
@@ -23,7 +24,7 @@
   &-main {
     // background-color: aqua;
     display: flex;
-    margin-left: 800px;
+    margin: 50px 900px;
 
     @include sp-screen {
       display: none;
@@ -49,8 +50,8 @@
     display: block;
     cursor: pointer;
     position: absolute;
-    right: 19%;
-    top: 13%;
+    right: 12%;
+    top: 9%;
     /* background-color: aqua; */
   }
 
@@ -106,45 +107,47 @@
 .main {
   &-conteiner {
     position: relative;
-    left: 50px;
+    height: 448px;
 
     @include sp-screen {
       position: static;
+      height: fit-content;
+
     }
 
   }
 
   &-box1 {
     width: 100%;
+    margin-left: 50px;
 
     @include sp-screen {
-      position: relative;
+      margin: 0;
     }
 
   }
 
   &-box2 {
     position: absolute;
-    top: -120px;
-    left: -60px;
+    top: -110px;
+    left: -5px;
 
     @include sp-screen {
       position: static;
       display: flex;
       width: 30%;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin: 20px 80px;
     }
   }
 
   &-box3 {
     position: absolute;
-    left: 590px;
-    top: 240px;
+    right: 18px;
+    top: 236px;
 
     @include sp-screen {
       left: 4%;
-      top: 29%;
+      top: 23%;
       width: 60%;
     }
   }
@@ -155,13 +158,16 @@
       font-size: 15px;
     }
   }
-}
-.sp-br{
-  display:block;
-  @include sp-screen {
-    display:block;
+
+  &-hidden {
+   display: inline-block;
   }
 }
+
+.visual-pc{
+  display: none;
+}
+
 
 
 // -----------Contents------------
@@ -174,7 +180,6 @@ h1 {
 }
 
 .contents {
-  background-color: aqua;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -198,29 +203,29 @@ h1 {
     height: 2px;
     background: #000000;
     // bottom: -1px;
-    }
-    
-    a:hover::after {
-    width: 100%;
-    }  
+  }
 
-    .blog{
-      @include sp-screen {
-        left: 0px;
-        position: absolute;
-        align-items: flex-end;
-        min-height: 100px;
-      }
+  a:hover::after {
+    width: 100%;
+  }
+
+  .blog {
+    @include sp-screen {
+      left: 0px;
+      position: absolute;
+      align-items: flex-end;
+      min-height: 100px;
     }
+  }
 
 
 
   @include sp-screen {
     display: block;
     position: static;
-    margin: 0 auto;
+    margin: 5px;
     text-align: center;
-   
+
   }
 
 
@@ -233,7 +238,8 @@ h1 {
     transition: all .4s ease-in-out;
 
     @include sp-screen {
-      margin: 0 auto;
+      width: fit-content;
+      margin: 0px;
     }
 
   }
@@ -245,13 +251,15 @@ h1 {
 
 .ft {
   background-color: black;
-  height: 70px;
+  height: 50px;
   color: white;
   text-align: center;
   font-size: 7px;
   margin: 0 auto;
   padding: 55px 0;
+  position: static;
 }
+
 // h1 {
 //   text-align: center;
 //   padding: 50px;
@@ -283,7 +291,7 @@ h1 {
 //     background: #000000;
 //     bottom: -1px;
 //     }
-    
+
 //     a:hover::after {
 //     width: 100%;
 //     }  
@@ -304,7 +312,7 @@ h1 {
 //     position: static;
 //     margin: 0 auto;
 //     text-align: center;
-   
+
 //   }
 
 //   &-2 {
@@ -331,7 +339,7 @@ h1 {
 //       align-items: flex-end;
 //       min-height: 100px;
 //     }
-  
+
 //     a::after {
 //       position: absolute;
 //       transition: 0.5s;
@@ -342,7 +350,7 @@ h1 {
 //       background: #000000;
 //       bottom: -1px;
 //       }
-      
+
 //       a:hover::after {
 //       width: 100%;
 //       }  

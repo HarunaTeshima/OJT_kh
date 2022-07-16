@@ -1,4 +1,5 @@
-.main-conteiner {
+.main-conteiner,
+.main-conteiner2 {
   max-width: 1152px;
   margin: 0 auto;
 }
@@ -30,8 +31,8 @@
     display: block;
     cursor: pointer;
     position: absolute;
-    right: 19%;
-    top: 13%;
+    right: 12%;
+    top: 9%;
     /* background-color: aqua; */
   }
   .bun .pate,
@@ -75,29 +76,31 @@
 
 .main-conteiner {
   position: relative;
-  left: 50px;
+  height: 448px;
 }
 
 @media screen and (max-width: 767px) {
   .main-conteiner {
     position: static;
+    height: fit-content;
   }
 }
 
 .main-box1 {
   width: 100%;
+  margin-left: 50px;
 }
 
 @media screen and (max-width: 767px) {
   .main-box1 {
-    position: relative;
+    margin: 0;
   }
 }
 
 .main-box2 {
   position: absolute;
-  top: -120px;
-  left: -60px;
+  top: -110px;
+  left: -5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -105,21 +108,20 @@
     position: static;
     display: flex;
     width: 30%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 80px;
   }
 }
 
 .main-box3 {
   position: absolute;
-  left: 590px;
-  top: 240px;
+  right: 18px;
+  top: 236px;
 }
 
 @media screen and (max-width: 767px) {
   .main-box3 {
     left: 4%;
-    top: 29%;
+    top: 23%;
     width: 60%;
   }
 }
@@ -131,28 +133,12 @@
   }
 }
 
-.sp-br {
-  display: block;
-}
-
-@media screen and (max-width: 767px) {
-  .sp-br {
-    display: block;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.main-hidden {
+  display: inline-block;
 }
 
 .visual-pc {
-  animation-name: fadeIn;
-  animation-duration: 10s;
+  display: none;
 }
 
 h1 {
@@ -162,7 +148,6 @@ h1 {
 }
 
 .contents {
-  background-color: aqua;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -205,7 +190,7 @@ h1 {
   .contents {
     display: block;
     position: static;
-    margin: 0 auto;
+    margin: 5px;
     text-align: center;
   }
 }
@@ -221,7 +206,8 @@ h1 {
 
 @media screen and (max-width: 767px) {
   .contents-bx1 {
-    margin: 0 auto;
+    width: fit-content;
+    margin: 0px;
   }
 }
 
@@ -237,5 +223,6 @@ h1 {
   font-size: 7px;
   margin: 0 auto;
   padding: 55px 0;
+  position: static;
 }
 /*# sourceMappingURL=style.css.map */
