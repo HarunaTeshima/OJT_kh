@@ -2,6 +2,7 @@
 .main-conteiner2 {
   max-width: 1152px;
   margin: 0 auto;
+  background-color: aqua;
 }
 
 // ***************   レスポンシブ設定   *************** 
@@ -153,6 +154,7 @@
   }
 
   &-font {
+    margin-left: 160px;
     @include sp-screen {
       text-align: center;
       font-size: 15px;

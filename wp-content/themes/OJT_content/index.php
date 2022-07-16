@@ -10,11 +10,10 @@
             <source media="(max-width:  767px)" srcset="<?php echo get_template_directory_uri(); ?>/folder/visual_text_sp.png">
             <img src="<?php echo get_template_directory_uri(); ?>/folder/visual_text_pc.png" alt="美浜文字">
         </picture>
-        <div class="main-font">
+    </main>
+    <div class="main-font">
            <p >進化し続ける「街」<span class="main-hidden">アメリカンビレッジマガジン</span></p>
         </div>
-    </main>
-
 
 <!-- ********** ループ文　*********** -->
 <main class="main-conteiner2">
