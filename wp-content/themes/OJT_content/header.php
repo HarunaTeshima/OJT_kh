@@ -14,9 +14,9 @@
 <body>
     <!-- <div class="first"> -->
     <header>
-        <div class="header-container">
+        <!-- <div class="header-container"> -->
           <?php wp_nav_menu(); ?>
-       </div> 
+       <!-- </div>  -->
 
         <!-- 　ハンバーガーメニュー ボタン部分　 -->
         <input type="checkbox" id="hamburger">
@@ -24,14 +24,14 @@
             <span class="pate"></span>
         </label>
 
-        <div class="header-main"> <!-- 　ハンバーガーメニュー部分　 -->
-            <ul>
+        <!-- <div class="header-main">  　ハンバーガーメニュー部分　 -->
+            <!-- <ul>
               <li><a class="header-box" href="">menu1</a></li>
               <li><a class="header-box" href="">menu2</a></li>
               <li><a class="header-box" href="">menu3</a></li>
               <li><a class="header-box" href="">menu4</a></li>  
            </ul> 
-       </div>
+       </div> --> 
 
         <main class="main-conteiner">
             <!-- *** 左上画像 *** -->
