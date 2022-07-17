@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 
 <!-- ********** ループ文　*********** -->
-<main class="main-conteiner2">
+
     <h1><?php the_title(); ?></h1>
+  <main class="main-conteiner2">
       <?php 
          if (have_posts()):
            while(have_posts()):
@@ -20,11 +21,12 @@
                 <a href="<?php the_permalink(); ?>">READ MORE</a>
             </div>
        </div>
+    </section>
            <?php endwhile;
               else :?>
-              <p>表示する記事がありません</p>
+             <!-- <section class="contents"> </section> -->
            <?php endif;?>
-    </section>
+   
    </main>
 
     <?php get_footer(); ?>
