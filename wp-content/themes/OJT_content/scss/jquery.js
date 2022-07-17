@@ -12,4 +12,11 @@ $(function() {
     },3000);
     
 
+      // $('.pate').on('click', function () {        // js-btnクラスをクリックすると、
+      //   $('.header-main').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする
+      // })
+
+
+
+// 大外のカッコ
  });

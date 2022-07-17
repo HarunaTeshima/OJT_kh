@@ -23,13 +23,13 @@
         <label for="hamburger" class="bun">
             <span class="pate"></span>
         </label>
-       
+
         <div class="header-main"> <!-- 　ハンバーガーメニュー部分　 -->
             <ul>
-              <li><a class="header-box" href="#">menu1</a></li>
-              <li><a class="header-box" href="#">menu2</a></li>
-              <li><a class="header-box" href="#">menu3</a></li>
-              <li><a class="header-box" href="#">menu4</a></li>  -->
+              <li><a class="header-box" href="">menu1</a></li>
+              <li><a class="header-box" href="">menu2</a></li>
+              <li><a class="header-box" href="">menu3</a></li>
+              <li><a class="header-box" href="">menu4</a></li>  
            </ul> 
        </div>
 
