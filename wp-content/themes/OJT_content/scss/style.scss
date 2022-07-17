@@ -264,8 +264,6 @@ h1 {
     }
   }
 
-
-
   @include sp-screen {
     display: block;
     position: static;
@@ -273,7 +271,6 @@ h1 {
     text-align: center;
 
   }
-
 
   &-bx1 {
     position: relative;
@@ -288,7 +285,6 @@ h1 {
       margin: 0px;
       text-align: start;
     }
-
   }
 
   &-bx1:hover {
