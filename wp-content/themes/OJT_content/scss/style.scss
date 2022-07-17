@@ -237,6 +237,7 @@ h1 {
     display: flex;
     align-items: flex-end;
     min-height: 100px;
+    padding: 10px;
   }
 
   a::after {
@@ -247,7 +248,7 @@ h1 {
     width: 20px;
     height: 2px;
     background: #000000;
-    // bottom: -1px;
+    padding: 10px;
   }
 
   a:hover::after {
