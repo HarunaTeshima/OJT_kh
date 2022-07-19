@@ -1,24 +1,24 @@
 $(function() {
 
     // *******フェードイン・フェードアウト part1***********
-       setTimeout(function(){
-    //    // 0.5（500）秒後に1（1000）秒かけてフェードイン
-          $('.pc').fadeIn(3000);
-       },1000);
-    
-       // 2.5（2500）秒後に1（1000）秒かけてフェードアウト
         setTimeout(function(){
-          $('.pc').fadeOut(3000);
-      },1000);
+     //    // 0.5（500）秒後に1（1000）秒かけてフェードイン
+           $('.pc').fadeIn(3000);
+        },1000);
+    
+        // 2.5（2500）秒後に1（1000）秒かけてフェードアウト
+         setTimeout(function(){
+           $('.pc').fadeOut(3000);
+       },1000);
 
-      setTimeout(function(){
-         $('.pc').fadeTo(0, 1);
-     });
+    //    setTimeout(function(){
+    //       $('.pc').fadeTo(0, 1);
+    //   });
     
      // *******フェードイン・フェードアウト part2***********
-    // setTimeout(function(){
-    // $('.pc').fadeToggle(3000);
-    // },1000);  
+    //  setTimeout(function(){
+    //  $('.pc').fadeToggle(3000);
+    //  },1000);  
 
 
 

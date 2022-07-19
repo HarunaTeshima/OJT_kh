@@ -3,7 +3,6 @@
 .main-conteiner2 {
   max-width: 1152px;
   margin: 0 auto;
-  background-color: aqua;
 }
 
 .header {
@@ -17,18 +16,16 @@
     top: 25%;
     font-size: 20px;
     text-align: center;
-    right: -800px;
-    width: 100%;
+    right: -130px;
     height: 100%;
     z-index: 100;
     color: black;
     background-color: #FFFFF0;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
   }
 }
 
 .menu-menu-container ul li {
-  display: flex;
   justify-content: center;
   margin: 40px 0px;
 }
@@ -55,12 +52,6 @@
     margin: 0px;
     font-size: 30px;
     font-weight: 400;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .header-main {
-    display: none;
   }
 }
 
@@ -100,10 +91,6 @@
     border-radius: 2px;
     transition: all 1s ease;
   }
-  .bun .pate {
-    position: relative;
-    top: calc(50% - 2px);
-  }
   .bun .pate::before,
   .bun .pate::after {
     position: absolute;
@@ -124,7 +111,7 @@
   #hamburger:checked + .bun .pate::after {
     transform: rotate(-45deg) translate(7px, -8px);
   }
-  #hamburger:checked ~ .menu-menu-container {
+  #hamburger:checked ~ .header-container {
     right: 0;
   }
 }
@@ -137,7 +124,7 @@
 @media screen and (max-width: 767px) {
   .main-conteiner {
     position: static;
-    height: 350px;
+    height: 400px;
   }
 }
 
@@ -149,7 +136,6 @@
 @media screen and (max-width: 767px) {
   .main-box1 {
     margin: 20px 0px;
-    height: 80%;
   }
 }
 
@@ -190,12 +176,19 @@
   .main-font {
     text-align: center;
     margin: 0px 10px;
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
 .pc {
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    margin-top: 10px;
+    height: 60%;
+  }
 }
 
 h1 {

@@ -14,15 +14,15 @@
 <body>
     <!-- <div class="first"> -->
     <header>
-        <!-- <div class="header-container"> -->
-          <?php wp_nav_menu(); ?>
-       <!-- </div>  -->
-
         <!-- 　ハンバーガーメニュー ボタン部分　 -->
         <input type="checkbox" id="hamburger">
         <label for="hamburger" class="bun">
             <span class="pate"></span>
         </label>
+
+        <div class="header-container"> 
+          <?php wp_nav_menu(); ?>
+        </div>  
 
         <!-- <div class="header-main">  　ハンバーガーメニュー部分　 -->
             <!-- <ul>
@@ -49,7 +49,7 @@
  
        <!-- もしヘッダー画像が設定されていないなら -->
        <?php else: ?>
-          <img src="<?php echo get_template_directory_uri(); ?>/src/img/top_img.jpg">
+          <!-- <img src="<?php //echo get_template_directory_uri(); ?>/src/img/top_img.jpg"> -->
        <?php endif; ?>
 
 
