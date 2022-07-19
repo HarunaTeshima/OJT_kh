@@ -3,6 +3,7 @@
 .main-conteiner2 {
   max-width: 1152px;
   margin: 0 auto;
+  background-color: aqua;
 }
 
 .header {
@@ -148,6 +149,7 @@
 @media screen and (max-width: 767px) {
   .main-box1 {
     margin: 20px 0px;
+    height: 80%;
   }
 }
 
@@ -190,10 +192,6 @@
     margin: 0px 10px;
     font-size: 15px;
   }
-}
-
-.main-hidden {
-  display: inline-block;
 }
 
 .pc {
