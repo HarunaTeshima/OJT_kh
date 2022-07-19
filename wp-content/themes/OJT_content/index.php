@@ -2,7 +2,7 @@
 
 <!-- ********** ループ文　*********** -->
 
-    <h1><?php the_title(); ?></h1>
+    <h1>Latest Articles</h1>
   <main class="main-conteiner2">
     <?php query_posts('posts_per_page=6'); ?>
       <?php 
@@ -30,7 +30,9 @@
             Not Found.
            <?php endif;?>
            <?php wp_reset_query(); ?> 
+           
  </main>
+ 
         <div id="more_disp"><a href="#">もっと見る</a></div>
 
 
