@@ -32,11 +32,7 @@
            <?php wp_reset_query(); ?> 
            
  </main>
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 5cdce8c72e4de3366a94ce4c179e77d5d6cbc22b
         <div id="more_disp"><a href="#">もっと見る</a></div>
 
 
