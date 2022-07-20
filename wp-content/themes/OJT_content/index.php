@@ -31,6 +31,7 @@
            <?php endif;?>
            <?php wp_reset_query(); ?> 
  </main>
+
         <div id="more_disp"><a href="#">もっと見る</a></div>
 
 
